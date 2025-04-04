@@ -15,7 +15,7 @@ if __name__ == "__main__":
             if not data:
                 break
             while data:
-                sock.send(str(data).endode())
+                sock.send(str(data).encode())
                 data = fi.read()
             fi.close()
         except IOError:
